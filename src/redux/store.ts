@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 
 export const store = configureStore({
   reducer: {
-    // TODO: Add reducers here
+    counter: (state = 0) => state,
   },
 });
 
