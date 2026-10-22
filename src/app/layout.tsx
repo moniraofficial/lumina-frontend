@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/redux/Providers"; // আমরা যে আলাদা Providers কম্পোনেন্ট বানিয়েছিলাম সেটি ইমপোর্ট করা হলো
 import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/home/layout/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
           <Navbar /> 
           {children}
         </Providers>
+        <Footer />
       </body>
     </html>
   );
