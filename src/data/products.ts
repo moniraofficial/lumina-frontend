@@ -51,9 +51,121 @@
 //   },
 // ];
 
+// import { Product } from '@/types/product';
+
+// // ১. Curated For You সেকশনের জন্য প্রোডাক্টস ডাটা
+// export const curatedProducts: Product[] = [
+//   {
+//     id: 'p1',
+//     brand: 'LUMINA BEAUTY',
+//     name: 'Velvet Matte Lip Color',
+//     category: 'Makeup',
+//     price: 24.00,
+//     originalPrice: 32.00,
+//     rating: 5,
+//     reviewsCount: 128,
+//     image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=800&auto=format&fit=crop',
+//     slug: 'velvet-matte-lip-color',
+//   },
+//   {
+//     id: 'p2',
+//     brand: 'LUMINA SKINCARE',
+//     name: 'Hydrating Face Serum',
+//     category: 'Skincare',
+//     price: 28.00,
+//     originalPrice: 36.00,
+//     rating: 5,
+//     reviewsCount: 96,
+//     image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop',
+//     slug: 'hydrating-face-serum',
+//   },
+//   {
+//     id: 'p3',
+//     brand: 'LUMINA BEAUTY',
+//     name: 'Eyeshadow Palette',
+//     category: 'Makeup',
+//     price: 36.00,
+//     originalPrice: 46.00,
+//     rating: 5,
+//     reviewsCount: 74,
+//     image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop',
+//     slug: 'eyeshadow-palette',
+//   },
+//   {
+//     id: 'p4',
+//     brand: 'LUMINA FRAGRANCE',
+//     name: 'Floral Eau de Parfum',
+//     category: 'Fragrance',
+//     price: 42.00,
+//     originalPrice: 56.00,
+//     rating: 5,
+//     reviewsCount: 82,
+//     image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=800&auto=format&fit=crop',
+//     slug: 'floral-eau-de-parfum',
+//   },
+// ];
+
+// // ২. Loved By Everyone সেকশনের জন্য নতুন প্রোডাক্টস ডাটা
+// export const lovedProducts: Product[] = [
+//   {
+//     id: 'lp1',
+//     brand: 'LUMINA BEAUTY',
+//     name: 'Matte Lipstick',
+//     category: 'Makeup',
+//     price: 22.00,
+//     rating: 5,
+//     reviewsCount: 312,
+//     image: 'https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?q=80&w=800&auto=format&fit=crop',
+//     slug: 'matte-lipstick',
+//   },
+//   {
+//     id: 'lp2',
+//     brand: 'LUMINA SKINCARE',
+//     name: 'Hydrating Face Cream',
+//     category: 'Skincare',
+//     price: 28.00,
+//     rating: 5,
+//     reviewsCount: 206,
+//     image: 'https://images.unsplash.com/photo-1608248597261-83325705438f?q=80&w=800&auto=format&fit=crop',
+//     slug: 'hydrating-face-cream',
+//   },
+//   {
+//     id: 'lp3',
+//     brand: 'LUMINA FRAGRANCE',
+//     name: 'Signature Perfume',
+//     category: 'Fragrance',
+//     price: 40.00,
+//     rating: 5,
+//     reviewsCount: 165,
+//     image: 'https://images.unsplash.com/photo-1547887537-6158d64c35b3?q=80&w=800&auto=format&fit=crop',
+//     slug: 'signature-perfume',
+//   },
+//   {
+//     id: 'lp4',
+//     brand: 'LUMINA BEAUTY',
+//     name: 'Nude Eyeshadow Palette',
+//     category: 'Makeup',
+//     price: 34.00,
+//     rating: 5,
+//     reviewsCount: 142,
+//     image: 'https://images.unsplash.com/photo-1583241801142-113b9f5bbde5?q=80&w=800&auto=format&fit=crop',
+//     slug: 'nude-eyeshadow-palette',
+//   },
+//   {
+//     id: 'lp5',
+//     brand: 'LUMINA FASHION',
+//     name: 'Shoulder Bag',
+//     category: 'Fashion',
+//     price: 52.00,
+//     rating: 5,
+//     reviewsCount: 98,
+//     image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop',
+//     slug: 'shoulder-bag',
+//   },
+// ];
+
 import { Product } from '@/types/product';
 
-// ১. Curated For You সেকশনের জন্য প্রোডাক্টস ডাটা
 export const curatedProducts: Product[] = [
   {
     id: 'p1',
@@ -66,6 +178,8 @@ export const curatedProducts: Product[] = [
     reviewsCount: 128,
     image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=800&auto=format&fit=crop',
     slug: 'velvet-matte-lip-color',
+    badge: '-25%',
+    inStock: true,
   },
   {
     id: 'p2',
@@ -78,6 +192,7 @@ export const curatedProducts: Product[] = [
     reviewsCount: 96,
     image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop',
     slug: 'hydrating-face-serum',
+    inStock: true,
   },
   {
     id: 'p3',
@@ -90,6 +205,7 @@ export const curatedProducts: Product[] = [
     reviewsCount: 74,
     image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop',
     slug: 'eyeshadow-palette',
+    inStock: true,
   },
   {
     id: 'p4',
@@ -102,10 +218,10 @@ export const curatedProducts: Product[] = [
     reviewsCount: 82,
     image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=800&auto=format&fit=crop',
     slug: 'floral-eau-de-parfum',
+    inStock: true,
   },
 ];
 
-// ২. Loved By Everyone সেকশনের জন্য নতুন প্রোডাক্টস ডাটা
 export const lovedProducts: Product[] = [
   {
     id: 'lp1',
@@ -117,6 +233,7 @@ export const lovedProducts: Product[] = [
     reviewsCount: 312,
     image: 'https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?q=80&w=800&auto=format&fit=crop',
     slug: 'matte-lipstick',
+    inStock: true,
   },
   {
     id: 'lp2',
@@ -128,6 +245,7 @@ export const lovedProducts: Product[] = [
     reviewsCount: 206,
     image: 'https://images.unsplash.com/photo-1608248597261-83325705438f?q=80&w=800&auto=format&fit=crop',
     slug: 'hydrating-face-cream',
+    inStock: true,
   },
   {
     id: 'lp3',
@@ -139,6 +257,7 @@ export const lovedProducts: Product[] = [
     reviewsCount: 165,
     image: 'https://images.unsplash.com/photo-1547887537-6158d64c35b3?q=80&w=800&auto=format&fit=crop',
     slug: 'signature-perfume',
+    inStock: true,
   },
   {
     id: 'lp4',
@@ -150,6 +269,7 @@ export const lovedProducts: Product[] = [
     reviewsCount: 142,
     image: 'https://images.unsplash.com/photo-1583241801142-113b9f5bbde5?q=80&w=800&auto=format&fit=crop',
     slug: 'nude-eyeshadow-palette',
+    inStock: true,
   },
   {
     id: 'lp5',
@@ -161,5 +281,115 @@ export const lovedProducts: Product[] = [
     reviewsCount: 98,
     image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop',
     slug: 'shoulder-bag',
+    inStock: true,
+  },
+];
+
+// শপ পেজের জন্য সব ৮টি প্রোডাক্ট ডাটা (ফিগমা ইন্টারফেসের মতো)
+export const shopProducts: Product[] = [
+  {
+    id: 'sp1',
+    brand: 'LUMINA BEAUTY',
+    name: 'Velvet Matte Lip Color',
+    category: 'Makeup',
+    price: 24.00,
+    originalPrice: 32.00,
+    rating: 5,
+    reviewsCount: 128,
+    image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=800&auto=format&fit=crop',
+    slug: 'velvet-matte-lip-color',
+    badge: '-25%',
+    inStock: true,
+  },
+  {
+    id: 'sp2',
+    brand: 'LUMINA SKINCARE',
+    name: 'Radiance Face Serum',
+    category: 'Skincare',
+    price: 28.00,
+    originalPrice: 36.00,
+    rating: 5,
+    reviewsCount: 96,
+    image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop',
+    slug: 'radiance-face-serum',
+    inStock: true,
+  },
+  {
+    id: 'sp3',
+    brand: 'LUMINA BEAUTY',
+    name: 'Eyeshadow Palette',
+    category: 'Makeup',
+    price: 36.00,
+    originalPrice: 46.00,
+    rating: 5,
+    reviewsCount: 74,
+    image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop',
+    slug: 'eyeshadow-palette',
+    inStock: true,
+  },
+  {
+    id: 'sp4',
+    brand: 'LUMINA FRAGRANCE',
+    name: 'Floral Eau de Parfum',
+    category: 'Fragrance',
+    price: 42.00,
+    originalPrice: 56.00,
+    rating: 5,
+    reviewsCount: 82,
+    image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=800&auto=format&fit=crop',
+    slug: 'floral-eau-de-parfum',
+    inStock: true,
+  },
+  {
+    id: 'sp5',
+    brand: 'LUMINA SKINCARE',
+    name: 'Hydrating Face Cream',
+    category: 'Skincare',
+    price: 28.00,
+    originalPrice: 40.00,
+    rating: 5,
+    reviewsCount: 206,
+    image: 'https://images.unsplash.com/photo-1608248597261-83325705438f?q=80&w=800&auto=format&fit=crop',
+    slug: 'hydrating-face-cream',
+    inStock: true,
+  },
+  {
+    id: 'sp6',
+    brand: 'LUMINA FASHION',
+    name: 'Leather Shoulder Bag',
+    category: 'Fashion',
+    price: 69.00,
+    rating: 5,
+    reviewsCount: 48,
+    image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop',
+    slug: 'leather-shoulder-bag',
+    badge: 'NEW',
+    inStock: true,
+  },
+  {
+    id: 'sp7',
+    brand: 'LUMINA BEAUTY',
+    name: 'Makeup Brush Set',
+    category: 'Beauty Tools',
+    price: 32.00,
+    originalPrice: 42.00,
+    rating: 5,
+    reviewsCount: 112,
+    image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?q=80&w=800&auto=format&fit=crop',
+    slug: 'makeup-brush-set',
+    inStock: true,
+  },
+  {
+    id: 'sp8',
+    brand: 'LUMINA FASHION',
+    name: 'Satin Midi Dress',
+    category: 'Fashion',
+    price: 48.00,
+    originalPrice: 65.00,
+    rating: 5,
+    reviewsCount: 65,
+    image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=800&auto=format&fit=crop',
+    slug: 'satin-midi-dress',
+    inStock: true,
   },
 ];
